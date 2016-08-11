@@ -51,15 +51,32 @@ int main(int argc, const char * argv[])
     PrintList(list1);
 
 
+    // 在指定位置插入元素x，需要使用迭代器找到该元素
+    list<int>::iterator listInte = list1.begin();
+    for (int i = 0; i < 2 && listInte != list1.end(); i++)
+    {
+        listInte++;
+    }
+    list1.insert(listInte, 99);
+    PrintList(list1);
 
 
 
+
+
+
+
+
+
+    list1.clear();
+    PrintList(list1);
 
     return 0;
 }
 
 void PrintList(list<int> pList)
 {
+    cout << "list打印结果为：";
     list<int>::iterator listIte;
     for (listIte = pList.begin(); listIte != pList.end(); listIte++)
     {
