@@ -79,11 +79,16 @@ int main(int argc, const char * argv[])
     list1.reverse();
     PrintList(list1);
 
+    // 交换两个list
+    list<int> listSwap;
+    listSwap.push_back(33);
+    listSwap.push_back(44);
 
+    list1.swap(listSwap);
+    PrintList(list1);
+    PrintList(listSwap);
 
-
-
-
+    // 清空整个链表
     list1.clear();
     PrintList(list1);
 
