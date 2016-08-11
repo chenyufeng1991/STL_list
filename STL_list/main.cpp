@@ -71,7 +71,13 @@ int main(int argc, const char * argv[])
     cout << "尾部元素为：" << list1.back() << endl;
     cout << "头部元素为：" << list1.front() << endl;
 
+    // 升序排序
+    list1.sort();
+    PrintList(list1);
 
+    // 降序排序
+    list1.reverse();
+    PrintList(list1);
 
 
 
