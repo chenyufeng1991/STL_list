@@ -68,7 +68,8 @@ int main(int argc, const char * argv[])
     list1.erase(listErase);
     PrintList(list1);
 
-
+    cout << "尾部元素为：" << list1.back() << endl;
+    cout << "头部元素为：" << list1.front() << endl;
 
 
 
