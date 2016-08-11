@@ -50,7 +50,6 @@ int main(int argc, const char * argv[])
     list1.remove(2);
     PrintList(list1);
 
-
     // 在指定位置插入元素x，需要使用迭代器找到该元素
     list<int>::iterator listInte = list1.begin();
     for (int i = 0; i < 2 && listInte != list1.end(); i++)
@@ -59,6 +58,16 @@ int main(int argc, const char * argv[])
     }
     list1.insert(listInte, 99);
     PrintList(list1);
+
+    // 删除指定位置的元素
+    list<int>::iterator listErase = list1.begin();
+    for (int i = 0; i < 2 && listErase != list1.end(); i++)
+    {
+        listErase++;
+    }
+    list1.erase(listErase);
+    PrintList(list1);
+
 
 
 
